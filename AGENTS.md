@@ -23,6 +23,12 @@ work done.
 
 ## Rules
 
+- HOARD engine packages are pluggable and interoperable, and as
+  standalone as possible: individually adoptable, swappable and usable
+  without any other HOARD package, game or framework. Packages compose
+  through data — minimal shapes, callbacks, plain values — never
+  through shared state; treat a new dependency or a sibling import as a
+  design regression, not an optimization.
 - Dependency-free leaf: package sources use relative imports only — no
   game code, no Svelte, no i18n, no npm dependencies at runtime. The
   boundary test (`src/boundary.test.ts`) and lint enforce this.
