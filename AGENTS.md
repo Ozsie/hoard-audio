@@ -35,5 +35,5 @@ work done.
 - The browser is reached only through the `Audio` constructor and the
   `window` unlock listeners; tests stub the global `Audio`, so the
   suite runs in plain Node without a DOM.
-- The game applies and publishes this work: published to npm, the
-  game's `package.json` flips its `file:` dependency to `^0.1.0`.
+- Published to npm as `@hoard-engine/audio` (v0.1.0) and consumed by the
+  game as a `^0.1.0` dependency, like the other HOARD engine packages.
